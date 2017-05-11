@@ -730,9 +730,42 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yuV-RL-FMq">
+                                <rect key="frame" x="20" y="80" width="301" height="371"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBs-4t-a50">
+                                        <rect key="frame" x="49" y="254" width="203" height="117"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="6:00" id="8f3-XD-BVk">
+                                            <font key="font" size="100" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-ea-UVU">
+                                        <rect key="frame" x="20" y="0.0" width="261" height="246"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="stopped" id="hvm-dS-KXN"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a9E-ea-UVU" firstAttribute="leading" secondItem="yuV-RL-FMq" secondAttribute="leading" constant="20" symbolic="YES" id="JbZ-I4-iAn"/>
+                                    <constraint firstAttribute="trailing" secondItem="a9E-ea-UVU" secondAttribute="trailing" constant="20" symbolic="YES" id="TPg-a8-Ohk"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Vz2-cf-ZX0" secondAttribute="trailing" id="DQZ-r4-q1s"/>
+                            <constraint firstItem="Vz2-cf-ZX0" firstAttribute="top" secondItem="yuV-RL-FMq" secondAttribute="bottom" constant="20" id="Iqa-Zh-eLz"/>
+                            <constraint firstItem="yuV-RL-FMq" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="XHB-XH-SBb"/>
+                            <constraint firstAttribute="trailing" secondItem="yuV-RL-FMq" secondAttribute="trailing" constant="20" id="anr-KD-k4J"/>
+                            <constraint firstItem="yuV-RL-FMq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="cyy-Xy-9wo"/>
                             <constraint firstAttribute="bottom" secondItem="Vz2-cf-ZX0" secondAttribute="bottom" id="rql-sw-aIU"/>
                             <constraint firstItem="Vz2-cf-ZX0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="uJ4-k9-NEH"/>
                         </constraints>
@@ -743,4 +776,7 @@
             <point key="canvasLocation" x="77.5" y="998.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stopped" width="128" height="128"/>
+    </resources>
 </document>
