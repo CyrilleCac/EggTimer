@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E62934041EC5002A00BC6799 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62934031EC5002A00BC6799 /* PrefsViewController.swift */; };
 		E6E3E3461EC429CF00CE37A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3E3451EC429CF00CE37A7 /* AppDelegate.swift */; };
 		E6E3E3481EC429CF00CE37A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3E3471EC429CF00CE37A7 /* ViewController.swift */; };
 		E6E3E34A1EC429CF00CE37A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E3E3491EC429CF00CE37A7 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E62934031EC5002A00BC6799 /* PrefsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
 		E6E3E3421EC429CF00CE37A7 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E3E3451EC429CF00CE37A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6E3E3471EC429CF00CE37A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				E6E3E3541EC429ED00CE37A7 /* Supporting files */,
 				E6E3E3471EC429CF00CE37A7 /* ViewController.swift */,
+				E62934031EC5002A00BC6799 /* PrefsViewController.swift */,
 				E6E3E34B1EC429CF00CE37A7 /* Main.storyboard */,
 			);
 			path = EggTimer;
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6E3E3481EC429CF00CE37A7 /* ViewController.swift in Sources */,
+				E62934041EC5002A00BC6799 /* PrefsViewController.swift in Sources */,
 				E6E3E3461EC429CF00CE37A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +303,7 @@
 				E6E3E3531EC429CF00CE37A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
