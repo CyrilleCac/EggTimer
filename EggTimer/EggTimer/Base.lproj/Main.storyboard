@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F54b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F71b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
@@ -191,7 +191,7 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dvs-Av-aLF">
-                                <rect key="frame" x="18" y="145" width="381" height="26"/>
+                                <rect key="frame" x="19" y="145" width="381" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" title="For custardy yet firm soft-boiled eggs: 6 minutes" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="6" imageScaling="proportionallyDown" inset="2" selectedItem="yYo-Ho-TLY" id="ce1-ju-MbF">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -214,6 +214,9 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <connections>
+                                    <action selector="popupValueChanged:" target="Hti-YY-VKM" id="glW-62-xTB"/>
+                                </connections>
                             </popUpButton>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJL-pm-eLe">
                                 <rect key="frame" x="20" y="93" width="127" height="17"/>
@@ -237,6 +240,9 @@
                                 <rect key="frame" x="20" y="68" width="380" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" enabled="NO" state="on" alignment="left" minValue="1" maxValue="25" doubleValue="6" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="linear" id="y2Q-t8-fgP"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" target="Hti-YY-VKM" id="6ja-3K-qlk"/>
+                                </connections>
                             </slider>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EcD-32-MWa">
                                 <rect key="frame" x="14" y="13" width="82" height="32"/>
@@ -248,6 +254,9 @@
 Gw
 </string>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="cancelButtonClicked:" target="Hti-YY-VKM" id="XqS-Dr-WiG"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tlb-Hq-ezu">
                                 <rect key="frame" x="332" y="13" width="59" height="32"/>
@@ -255,10 +264,22 @@ Gw
                                 <buttonCell key="cell" type="push" title="OK" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EP8-ql-3W0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="okButtonClicked:" target="Hti-YY-VKM" id="j7U-3u-SSt"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="customSlider" destination="xy3-ha-hm0" id="5DD-nG-ac2"/>
+                        <outlet property="customTextField" destination="6sU-ba-bko" id="FfI-0c-vGe"/>
+                        <outlet property="popupValueChanged" destination="Dvs-Av-aLF" id="ghN-3b-3ko"/>
+                        <outlet property="presetsPopup" destination="Dvs-Av-aLF" id="cyn-xS-vVc"/>
+                    </connections>
                 </viewController>
                 <customObject id="uQD-Q5-7Km" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
